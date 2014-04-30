@@ -1,0 +1,2 @@
+wget-mipsel-static
+==================
