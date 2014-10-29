@@ -42,9 +42,9 @@ make install DESTDIR=$BASE
 ########### #################################################################
 
 mkdir -p $SRC/openssl && cd $SRC/openssl
-$WGET http://www.openssl.org/source/openssl-1.0.1g.tar.gz
-tar zxvf openssl-1.0.1g.tar.gz
-cd openssl-1.0.1g
+$WGET http://www.openssl.org/source/openssl-1.0.1j.tar.gz
+tar zxvf openssl-1.0.1j.tar.gz
+cd openssl-1.0.1j
 
 cat << "EOF" > openssl.patch
 --- Configure_orig      2013-11-19 11:32:38.755265691 -0700
@@ -75,9 +75,9 @@ make install CC=mipsel-linux-gcc AR="mipsel-linux-ar r" RANLIB=mipsel-linux-ranl
 ######## ####################################################################
 
 mkdir -p $SRC/wget && cd $SRC/wget
-$WGET http://ftp.gnu.org/gnu/wget/wget-1.15.tar.gz
-tar zxvf wget-1.15.tar.gz
-cd wget-1.15
+$WGET http://ftp.gnu.org/gnu/wget/wget-1.16.tar.gz
+tar zxvf wget-1.16.tar.gz
+cd wget-1.16
 
 LDFLAGS=$LDFLAGS \
 CPPFLAGS=$CPPFLAGS \
